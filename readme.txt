@@ -54,6 +54,7 @@ CallBacks:
     
     -> It opens the world of asynchronous Javascript.
     -> Suppose if there are two functions addItem() and placeOrder() we want placeOrder() to execute after addItem() is done so to do this we can pass the placeOrder() function as callback to that addItem() function.
+    -> When the first function finishes its task, it "calls back" by executing the function you provided, allowing you to continue with the next steps of your program.
     -> So it gives the control of placeOrder() i.e when to execute placeOrder(), to the addItem().
     -> It may be good that provides a order to execute but it has its set of disadvantages i.e CallBack Hell and Inversion of control.
 
