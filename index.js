@@ -1,14 +1,10 @@
-var x = 1;
-a();
-console.log(x);
+// L-2
+// var n = 2;
 
-function a() {
-  var x = 10;
-  console.log(x);
-  b();
-}
+// function square(num) {
+//   var ans = num * num;
+//   return ans;
+// }
 
-function b() {
-  var x = 100;
-  console.log(x);
-}
+// var square2 = square(n);
+// var square4 = square(4);

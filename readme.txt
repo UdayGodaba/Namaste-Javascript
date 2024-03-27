@@ -19,14 +19,14 @@ Javascript Basics:
 
 Hoisting:
 
-    -> It is a phenomena in Javascript where the varaibles and functions can be accessed even before they are initialized.
+    -> It is a phenomena in Javascript where the varaibles and functions can be accessed even before they are initialized i.e before assigning any value.
     -> As creation of execution context takes place in 2 phases so even before a single line is executed the memory is allocated to varaibles and functions so based on where we access these things can result in different answers i.e you will understand with the help of execution context flow.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Window Object:
 
-    -> These global objects serve as the foundation for JavaScript code execution within their respective environments, offering a global context for variables, functions and other features accessible throughout the application.
+    -> In JavaScript, the window object represents the global browsing context in a web browser environment, providing access to browser-related functionality and global variables.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -46,6 +46,15 @@ Scope, Scope Chaining and Lexical Environment:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+let, const, blockscope:
+
+    -> let and const are introduced in JavaScript from ES6.
+    -> let and const decelerations are not stored in global scope they are stored in seperate space called scripts.
+    -> Both let and const can't be redeclared whereas const expects both deceleration and initialization at the same time.
+    -> If we try to access both let and const decelerations before initialization they will result in reference error. Since they will be in temporal dead zone i.e time between Hoisting and initialization.
+    -> Block is the {} used whenever we want multiple statements to execute where JavaScript expects one statement like if statement.
+    -> let and const are blockscoped they have seperate memory space other than global, scripts.
+    -> Shadowing is changing the value of var from children block.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
