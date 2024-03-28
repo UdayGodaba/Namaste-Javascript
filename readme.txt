@@ -46,7 +46,7 @@ Scope, Scope Chaining and Lexical Environment:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-let, const, blockscope:
+let, const, blockscope, closures:
 
     -> let and const are introduced in JavaScript from ES6.
     -> let and const decelerations are not stored in global scope they are stored in seperate space called scripts.
@@ -55,7 +55,20 @@ let, const, blockscope:
     -> Block is the {} used whenever we want multiple statements to execute where JavaScript expects one statement like if statement.
     -> let and const are blockscoped they have seperate memory space other than global, scripts.
     -> Shadowing is changing the value of var from children block.
+    -> Closures are nothing but function along with lexical scope binded together.
+    -> Closures are indeed a combination of a function and its lexical environment, which allows the function to maintain access to variables from its enclosing scope even after the enclosing scope has finished execution.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Functions:
+
+    -> Function statement / declaration: function a(){}
+    -> Function expression: var b = function (){} 
+    -> The main difference between function statement and expression lies in hoisting.
+    -> Anonymous function: function without name.
+    -> Named function expression: var b = function a(){} but we cannot call function with that function name a out of the scope. 
+    -> First-class functions is the ability of functions to that can be assigned to variables, passed as arguments, returned from other functions, and treated like any other data type
+    -> Parameters refer to the variables listed as part of the function definition, while arguments are the actual values passed to the function when it is called.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
