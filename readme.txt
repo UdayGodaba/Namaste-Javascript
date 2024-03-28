@@ -72,6 +72,15 @@ Functions:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+EventListeners:
+
+    -> Callbacks are functions passed as arguments to other functions and invoked by those functions to control the timing or sequence of operations, particularly in asynchronous or event-driven scenarios.
+    -> EventListeners are those functions which will invoke a callback function based on the event.
+    -> EventListeners run in background when the event happens they invoke the callback.
+    -> The event listeners are like any JavaScript objects, should be garbage collected when they are no longer needed to free up memory. Event listeners can potentially be heavy, especially if they contain closures or maintain references to other objects. Proper cleanup of event listeners is important to avoid memory leaks and optimize performance.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 CallBacks: 
     
     -> It opens the world of asynchronous Javascript.
